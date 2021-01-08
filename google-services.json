@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "145788320772",
+    "project_id": "shree-balajee-aushdhalaya",
+    "storage_bucket": "shree-balajee-aushdhalaya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145788320772:android:77763d36f2be326c934951",
+        "android_client_info": {
+          "package_name": "in.sbaonline.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145788320772-14l1tub64mcpkkvbr8fvlkm6c6v0on46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFrVr9ml95F50628dr3L9iF4PJTMvhakM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145788320772-14l1tub64mcpkkvbr8fvlkm6c6v0on46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
