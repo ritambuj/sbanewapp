@@ -7,6 +7,8 @@ import * as Parse from 'parse';
 import { Category } from '../../services/category';
 import { SubCategory } from '../../services/sub-category';
 import { Subject, Observable, merge, of } from 'rxjs';
+import { CallNumber } from '@ionic-native/call-number/ngx';
+import { LocalStorage } from '../../services/local-storage'
 import {
   trigger,
   style,
@@ -138,8 +140,17 @@ export class HomePage extends BasePage {
   constructor(injector: Injector,
     private subCategoryService: SubCategory,
     private appConfigService: AppConfigService,
-    private itemService: Item) {
+    private storage: LocalStorage,
+    private itemService: Item,
+    private callNumber: CallNumber) {
     super(injector);
+  }
+
+  // callnumber function
+  call(){
+    this.callNumber.callNumber("18001021676", true)
+  .then(res => console.log('Launched dialer!', res))
+  .catch(err => console.log('Error launching dialer', err));
   }
 
   enableMenuSwipe(): boolean {
@@ -476,6 +487,24 @@ export class HomePage extends BasePage {
   trackByFn(index: number, item: any) {
     if (!item) return null;
     return item.id;
+  }
+
+  onChangeLang(event: CustomEvent) {
+
+    if (!event) return;
+
+    const lang = event.detail.value;
+
+    if (lang === 'ar') {
+      document.dir = 'rtl';
+    } else {
+      document.dir = 'ltr';
+    }
+
+    this.storage.setLang(lang);
+    this.translate.use(lang);
+    this.preference.lang = lang;
+   
   }
 
 }

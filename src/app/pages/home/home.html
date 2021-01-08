@@ -1,9 +1,23 @@
 <ion-header class="ion-no-border">
+  
   <ion-toolbar fixed>
-    <div slot="start" class="hide-xs-only show-sm-up">
+    <ion-list slot="end">
+      <ion-radio-group allowEmptySelection="false" [value]="preference.lang" (ionChange)="onChangeLang($event)">
+  
+        <ion-item>
+          <ion-select style="max-width: 100%;" value="en">
+            <ion-select-option value="en">{{ 'ENGLISH' | translate }}</ion-select-option>
+            <ion-select-option value="es">{{ 'SPANISH' | translate }}</ion-select-option>
+            <ion-select-option value="ar">{{ 'ARABIC' | translate }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+  
+      </ion-radio-group>
+    </ion-list>
+    <div slot="start" class="show-sm-up">
       <div class="logo">
-        <img src="./assets/imgs/icon.png" />
-        <h2>{{ 'APP_NAME' | translate }}</h2>
+        <img src="./assets/imgs/icon.svg" />
+        <!-- <h2>{{ 'APP_NAME' | translate }}</h2> -->
       </div>
     </div>
 
@@ -52,12 +66,14 @@
     <empty-view *ngIf="isEmptyViewVisible" icon="alert-circle-outline" [text]="'EMPTY_DATA' | translate">
     </empty-view>
 
+      <!-- call and whatsapp button -->
+
     <ion-row>
       <ion-col>
-        <ion-button color="primary" expand="full" shape="round">Toll-Free</ion-button>
+        <ion-button color="primary" expand="full" shape="round" (click)="call()">Toll-Free</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="secondary" expand="full" shape="round">WhatsApp</ion-button>
+        <ion-button color="secondary" expand="full" shape="round" href="https://wa.me/919142290185/?text=I%27m%20interested%20in%20your%20services">WhatsApp</ion-button>
       </ion-col>
 
     </ion-row>

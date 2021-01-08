@@ -28,6 +28,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@ionic-native/app-version": "^5.27.0",
     "@ionic-native/browser-tab": "^5.27.0",
+    "@ionic-native/call-number": "^5.30.0",
     "@ionic-native/camera": "^5.27.0",
     "@ionic-native/core": "^5.27.0",
     "@ionic-native/device": "^5.27.0",
@@ -100,6 +101,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "@types/parse": "^2.12.1",
+    "call-number": "^1.0.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -150,7 +152,8 @@
       "cordova-plugin-androidx-adapter": {},
       "cordova-plugin-nativeaudio": {},
       "cordova-plugin-sign-in-with-apple": {},
-      "parse-push-plugin": {}
+      "parse-push-plugin": {},
+      "mx.ferreyra.callnumber": {}
     },
     "platforms": [
       "android",

@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "IonShop",
+  "APP_NAME": "Shree Balajee Aushdhalaya",
   "APP_DESCRIPTION": "Ionic 5 Starter / Template for ecommerce based apps",
   "HOME": "Home",
   "PROFILE": "Profile",
@@ -7,7 +7,7 @@
   "NOTIFICATION": "Notification",
   "LANGUAGE": "Language",
   "ENGLISH": "English",
-  "SPANISH": "Spanish",
+  "SPANISH": "हिंदी",
   "ARABIC": "Arabic",
   "MORE": "More",
   "PULL_TO_REFRESH": "Pull to Refresh",
