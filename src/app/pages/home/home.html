@@ -100,6 +100,22 @@
           </div>
         </div>
 
+        <div *ngIf="categories.length && block.type === 'categories'">
+          <ion-row class="ion-padding ion-align-items-center">
+            <ion-col>
+              <h3 class="ion-no-margin">
+                {{ 'UPLOAD_PRESCRIPTION' | translate }}
+              </h3>
+            </ion-col>
+            <ion-col class="ion-text-end">
+              <ion-button class="bold no-shadow ion-text-capitalize" round color="medium"
+                [routerLink]="['/upload-prescription']">
+                {{ 'UPLOAD' | translate }}
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </div>
+
         <!-- Category List -->
 
         <div *ngIf="categories.length && block.type === 'categories'">

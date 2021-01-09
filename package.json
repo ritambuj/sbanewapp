@@ -33,10 +33,12 @@
     "@ionic-native/core": "^5.27.0",
     "@ionic-native/device": "^5.27.0",
     "@ionic-native/facebook": "^5.27.0",
+    "@ionic-native/geolocation": "^5.30.0",
     "@ionic-native/google-plus": "^5.27.0",
     "@ionic-native/header-color": "^5.27.0",
     "@ionic-native/in-app-browser": "^5.27.0",
     "@ionic-native/native-audio": "^5.27.0",
+    "@ionic-native/native-geocoder": "^5.30.0",
     "@ionic-native/safari-view-controller": "^5.27.0",
     "@ionic-native/sign-in-with-apple": "^5.27.0",
     "@ionic-native/social-sharing": "^5.27.0",
@@ -103,6 +105,9 @@
     "@types/parse": "^2.12.1",
     "call-number": "^1.0.1",
     "codelyzer": "^5.1.2",
+    "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-nativegeocoder": "^3.4.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -153,7 +158,11 @@
       "cordova-plugin-nativeaudio": {},
       "cordova-plugin-sign-in-with-apple": {},
       "parse-push-plugin": {},
-      "mx.ferreyra.callnumber": {}
+      "mx.ferreyra.callnumber": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-plugin-nativegeocoder": {}
     },
     "platforms": [
       "android",

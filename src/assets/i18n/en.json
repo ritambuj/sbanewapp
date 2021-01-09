@@ -256,5 +256,6 @@
   "ERROR_CHECKOUT_GUEST_DISABLED": "Please complete your account information to place your order.",
   "ALL_ITEMS": "All Items",
   "LOAD_MORE": "Lore more",
-  "ITEM_NOT_AVAILABLE": "Item not available"
+  "ITEM_NOT_AVAILABLE": "Item not available",
+  "UPLOAD_PRESCRIPTION":"Upload Prescription"
 }

@@ -25,6 +25,8 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/faWhatsapp';
 import { CallNumber } from '@ionic-native/call-number/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { NativeGeocoder, NativeGeocoderResult, NativeGeocoderOptions } from '@ionic-native/native-geocoder/ngx';
 
 
 const icons = [faFacebookF, faTwitter, faWhatsapp];
@@ -101,6 +103,9 @@ registerLocaleData(localeEs, 'es');
     SignInWithApple,
     GooglePlus,
     CallNumber,
+    Geolocation,
+    NativeGeocoder,
+    
     {
       provide: 'SocialAuthServiceConfig',
       useValue: {

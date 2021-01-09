@@ -17,6 +17,8 @@
     <div class="line"></div>
   </ion-text>
 
+  <ion-button (click)="checkingLocation()">Locate Me</ion-button>
+
   <form [formGroup]="form" (ngSubmit)="onSubmit()" #form1="ngForm" novalidate>
     <ion-list lines="none">
 
@@ -48,21 +50,21 @@
         <span>{{ 'CITY' | translate }}</span>
       </ion-label>
       <ion-item class="ion-margin-vertical" lines="none" color="light">
-        <ion-input type="text" formControlName="city"></ion-input>
+        <ion-input type="text" formControlName="city" value={{city}}></ion-input>
       </ion-item>
 
       <ion-label position="stacked" color="medium">
         <span>{{ 'ZIPCODE' | translate }}</span>
       </ion-label>
       <ion-item class="ion-margin-vertical" lines="none" color="light">
-        <ion-input type="text" formControlName="zipcode"></ion-input>
+        <ion-input type="text" formControlName="zipcode" value={{pincode}}></ion-input>
       </ion-item>
 
       <ion-label position="stacked" color="medium">
         <span>{{ 'SHIPPING_ADDRESS' | translate }}</span>
       </ion-label>
       <ion-item class="ion-margin-vertical" lines="none" color="light">
-        <ion-textarea rows="4" formControlName="address"></ion-textarea>
+        <ion-textarea rows="4" formControlName="address" value={{address}}></ion-textarea>
       </ion-item>
 
       <ion-label position="stacked" color="medium">
