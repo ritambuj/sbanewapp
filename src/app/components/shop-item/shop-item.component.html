@@ -2,7 +2,7 @@
   [style.border]="styles?.border" [style.margin]="styles?.margin" class="full-width ion-no-margin">
 
   <div [style.padding]="styles?.padding" class="image-container">
-    <img offset="300" src="./assets/imgs/placeholder.png" [customObservable]="scrollObservable"
+    <img offset="300" src="./assets/imgs/1.svg" [customObservable]="scrollObservable"
       [lazyLoad]="item.featuredImageThumb?.url()" />
     <span *ngIf="item.salePrice">
       {{ item.discount | percent }} {{ 'OFF' | translate }}

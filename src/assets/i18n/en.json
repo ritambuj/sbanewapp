@@ -257,5 +257,6 @@
   "ALL_ITEMS": "All Items",
   "LOAD_MORE": "Lore more",
   "ITEM_NOT_AVAILABLE": "Item not available",
-  "UPLOAD_PRESCRIPTION":"Upload Prescription"
+  "UPLOAD_PRESCRIPTION":"Upload Prescription",
+  "UPLOAD": "Upload"
 }

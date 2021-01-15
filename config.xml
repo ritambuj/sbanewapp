@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="in.sbaonline.app" version="3.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="in.sbaonline.app" version="3.1.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>SBAOnline</name>
     <description>Starter for ecommerce based apps</description>
     <author email="info@quanlabs.com" href="https://quanlabs.com/">Quanlabs</author>

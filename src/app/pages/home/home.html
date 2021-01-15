@@ -67,19 +67,20 @@
     </empty-view>
 
     <ion-row class="ion-text-center">
-      <ion-col>
+      <ion-col [routerLink]="['/order-medicines']">
         <img src="./assets/imgs/1.svg" />
         <p>Order Medicines</p>
       </ion-col>
-      <ion-col>
-        <img src="./assets/imgs/2.svg" href=""/>
-        <p>Lab Test</p>
+      <ion-col [routerLink]="['/lab-test']">
+        <img src="./assets/imgs/2.svg" />
+        <p>Lab
+          Test</p>
       </ion-col>
-      <ion-col>
+      <ion-col [routerLink]="['/consult-a-doctor']">
         <img src="./assets/imgs/3.svg" />
         <p>Consulat a doctor</p>
       </ion-col>
-      <ion-col>
+      <ion-col [routerLink]="['/call-an-ambulance']">
         <img src="./assets/imgs/4.svg" />
         <p>Call An Ambulance</p>
       </ion-col>
@@ -124,11 +125,14 @@
           <ion-row class="ion-padding ion-align-items-center">
             <ion-col>
               <h3 class="ion-no-margin">
-                {{ 'UPLOAD_PRESCRIPTION' | translate }}
+                <img style="width: 38px;" src="./assets/imgs/prescription.svg" />
               </h3>
             </ion-col>
+            <ion-col>
+              <span style="font-size: 16px;"> {{ 'UPLOAD_PRESCRIPTION' | translate }} </span>
+            </ion-col>
             <ion-col class="ion-text-end">
-              <ion-button class="bold no-shadow ion-text-capitalize" round color="medium"
+              <ion-button class="bold no-shadow ion-text-capitalize" round color="danger"
                 [routerLink]="['/upload-prescription']">
                 {{ 'UPLOAD' | translate }}
               </ion-button>
@@ -146,7 +150,7 @@
               </h3>
             </ion-col>
             <ion-col class="ion-text-end">
-              <ion-button class="bold no-shadow ion-text-capitalize" round color="medium"
+              <ion-button class="bold no-shadow ion-text-capitalize" round color="danger"
                 [routerLink]="['./categories']">
                 {{ 'VIEW_ALL' | translate }}
               </ion-button>

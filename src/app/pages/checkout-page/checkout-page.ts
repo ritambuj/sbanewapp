@@ -85,7 +85,7 @@ export class CheckoutPage extends BasePage {
     this.form = new FormGroup({
       shipping: new FormControl(null, Validators.required),
       contactEmail: new FormControl(contactEmail, [
-        Validators.required,
+        // Validators.required,
         Validators.email,
       ]),
       card: new FormControl(null),
