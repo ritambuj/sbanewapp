@@ -4,13 +4,11 @@
     <ion-list slot="end">
       <ion-radio-group allowEmptySelection="false" [value]="preference.lang" (ionChange)="onChangeLang($event)">
   
-        <ion-item>
           <ion-select style="max-width: 100%;" value="en">
             <ion-select-option value="en">{{ 'ENGLISH' | translate }}</ion-select-option>
             <ion-select-option value="es">{{ 'SPANISH' | translate }}</ion-select-option>
             <ion-select-option value="ar">{{ 'ARABIC' | translate }}</ion-select-option>
           </ion-select>
-        </ion-item>
   
       </ion-radio-group>
     </ion-list>
@@ -21,13 +19,14 @@
       </div>
     </div>
 
-    <div>
+  </ion-toolbar>
+<ion-toolbar>
+      <div>
       <ion-searchbar mode="ios" showCancelButton="never" (ionBlur)="onBlurSearchInput()" (ionClear)="onClearSearch()"
         (ionInput)="onSearch($event)" (keyup)="onSubmitSearch($event)" [placeholder]="'SEARCH_PLACEHOLDER' | translate">
       </ion-searchbar>
     </div>
-
-  </ion-toolbar>
+</ion-toolbar>
 </ion-header>
 
 <ion-content #container scrollEvents="true">
