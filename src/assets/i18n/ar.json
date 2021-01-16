@@ -256,5 +256,9 @@
   "ERROR_CHECKOUT_GUEST_DISABLED": "يرجى استكمال معلومات حسابك لتقديم طلبك.",
   "ALL_ITEMS": "كل الاشياء",
   "LOAD_MORE": "تحميل المزيد",
-  "ITEM_NOT_AVAILABLE": "العنصر غير متاح"
+  "ITEM_NOT_AVAILABLE": "العنصر غير متاح",
+  "ORDER_MEDICINES": "Order Medicines",
+  "CALL_AN_AMBULANCE": "Call an Ambulance",
+  "LAB_TEST": "Lab Test",
+  "ASK_A_DOCTOR": "Ask a doctor"
 }

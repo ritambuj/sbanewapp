@@ -258,5 +258,9 @@
   "LOAD_MORE": "Lore more",
   "ITEM_NOT_AVAILABLE": "Item not available",
   "UPLOAD_PRESCRIPTION":"Upload Prescription",
-  "UPLOAD": "Upload"
+  "UPLOAD": "Upload",
+  "ORDER_MEDICINES": "Order Medicines",
+  "CALL_AN_AMBULANCE": "Call an Ambulance",
+  "LAB_TEST": "Lab Test",
+  "ASK_A_DOCTOR": "Ask a doctor"
 }
