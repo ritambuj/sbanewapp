@@ -3,13 +3,11 @@
   <ion-toolbar fixed>
     <ion-list slot="end">
       <ion-radio-group allowEmptySelection="false" [value]="preference.lang" (ionChange)="onChangeLang($event)">
-  
           <ion-select style="max-width: 100%;" value="en">
             <ion-select-option value="en">{{ 'ENGLISH' | translate }}</ion-select-option>
             <ion-select-option value="es">{{ 'SPANISH' | translate }}</ion-select-option>
             <ion-select-option value="ar">{{ 'ARABIC' | translate }}</ion-select-option>
           </ion-select>
-  
       </ion-radio-group>
     </ion-list>
     <div slot="start" class="show-sm-up">
