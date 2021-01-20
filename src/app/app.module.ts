@@ -58,6 +58,10 @@ import { GoogleLoginProvider } from 'angularx-social-login';
 import localeAr from '@angular/common/locales/ar';
 import localeEs from '@angular/common/locales/es';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 registerLocaleData(localeAr, 'ar');
 registerLocaleData(localeEs, 'es');
 
@@ -87,6 +91,9 @@ registerLocaleData(localeEs, 'es');
     IonicStorageModule.forRoot(),
     ImgFallbackModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireStorageModule
   ],
   providers: [
     StatusBar,

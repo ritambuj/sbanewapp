@@ -3,6 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebaseConfig: {
+    apiKey: "AIzaSyDmWHJ3pXoR4vO5QU7nA2os8Wk6utPC0to",
+    authDomain: "shree-balajee-aushdhalaya.firebaseapp.com",
+    projectId: "shree-balajee-aushdhalaya",
+    storageBucket: "shree-balajee-aushdhalaya.appspot.com",
+    messagingSenderId: "145788320772",
+    appId: "1:145788320772:web:9137d1dd048eebf1934951",
+    measurementId: "G-95T9EM23FS"
+  },
   production: false,
   serverUrl: 'https://console.sbaonline.in/api',
   appUrl: 'https://sbaonline.in',
